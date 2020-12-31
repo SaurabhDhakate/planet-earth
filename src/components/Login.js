@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export class Login extends Component {
     renderHeading() {
@@ -9,7 +10,7 @@ export class Login extends Component {
                     justifyContent: 'space-evenly',
                     alignItems: 'center'
                 }}>
-                    <a href="/login" style={{
+                    <Link to="/login" style={{
                         textDecoration: 'none',
                         color: '#494e55',
                         width: '40%'
@@ -17,12 +18,12 @@ export class Login extends Component {
                         <div style={{ borderBottom: '2px grey solid' }}>
                             <h3 style={{ textAlign: 'center' }}>Login</h3>
                         </div>
-                    </a>
-                    <a href="/register" style={{
+                    </Link>
+                    <Link to="/register" style={{
                         textDecoration: 'none',
                         color: 'grey',
                         width: '40%'
-                    }}><div style={{paddingBottom:'2px'}}><h3 style={{ textAlign: 'center' }}>Register</h3></div></a>
+                    }}><div style={{ paddingBottom: '2px' }}><h3 style={{ textAlign: 'center' }}>Register</h3></div></Link>
                 </div>
             )
         } else {
@@ -32,16 +33,16 @@ export class Login extends Component {
                     justifyContent: 'space-evenly',
                     alignItems: 'center'
                 }}>
-                    <a href="/login" style={{
+                    <Link to="/login" style={{
                         textDecoration: 'none',
                         color: 'grey',
                         width: '40%'
                     }}>
-                        <div style={{paddingBottom:'2px'}}>
+                        <div style={{ paddingBottom: '2px' }}>
                             <h3 style={{ textAlign: 'center' }}>Login</h3>
                         </div>
-                    </a>
-                    <a href="/register" style={{
+                    </Link>
+                    <Link to="/register" style={{
                         textDecoration: 'none',
                         color: '#494e55',
                         width: '40%'
@@ -49,13 +50,14 @@ export class Login extends Component {
                         <div style={{ borderBottom: '2px grey solid' }}>
                             <h3 style={{ textAlign: 'center' }}>Register</h3>
                         </div>
-                    </a>
+                    </Link>
                 </div>
             )
         }
     }
 
     render() {
+        console.log('login-form')
         return (
             <div style={{
                 width: '100%',

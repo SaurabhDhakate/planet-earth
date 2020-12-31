@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Redirect } from "react-router-dom";
 export class Welcome extends Component {
 
     render() {
+        console.log('object')
         return (
             <div className='main-div-welcome'>
                 <div className='brand-info'>
